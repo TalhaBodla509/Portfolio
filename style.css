@@ -1,0 +1,191 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f4f8; 
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-me-section {
+        grid-column: 1 / span 2; 
+    }
+}
+
+
+.page-header {
+    background: linear-gradient(90deg, #75df75 0%, #70b1d6 100%); 
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%; 
+    width: 300px;
+    height: 300px;
+    margin-right: 1.5rem;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease;
+    object-fit: cover; 
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.page-header .title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li a {
+    color: rgb(58, 128, 233); 
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.main-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+	
+}
+
+
+.section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #1d2b64;
+    border-bottom: 2px solid #f8cdda;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.hobbies-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies-section ul li {
+    padding: 0.5rem 0;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1d2b64;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #f8cdda;
+    box-shadow: 0 0 0 3px rgba(248, 205, 218, 0.5);
+    outline: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #1d2b64;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #2b3d84;
+    transform: translateY(-2px);
+}
+
+.page-footer {
+    background: linear-gradient(90deg, #f8cdda 0%, #1d2b64 100%); 
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e0e0e0;
+}
